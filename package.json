@@ -22,10 +22,12 @@
     "fetch-examples-ml5:prod": "cross-env NODE_ENV=production node ./dist/fetch-examples-ml5.bundle.js",
     "update-syntax-highlighting": "node ./server/scripts/update-syntax-highlighting.js",
     "update-p5-hinter": "node ./server/scripts/update-p5-hinter.js",
+    "update-p5": "node updateP5Data.js",
     "heroku-postbuild": "touch .env; npm run build",
     "storybook:build:css": "sass client/styles/main.scss client/styles/storybook.css",
     "storybook": "npm run storybook:build:css && storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -124,7 +126,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-storybook": "^0.6.15",
     "file-loader": "^6.2.0",
-    "husky": "^4.3.8",
+    "husky": "^8.0.0",
     "jest": "^27.3.1",
     "jest-styled-components": "^7.1.1",
     "lint-staged": "^10.5.4",
