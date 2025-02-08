@@ -51,7 +51,7 @@ services:
       # or here YOU CHOOSE
       # - MONGO_URL=mongodb://mongo:27017/p5js-web-editor
     volumes:
-      - .:/opt/node/app
+      - .:/opt/node/app:cached
       - /opt/node/app/node_modules
     ports:
       - '8000:8000'
