@@ -390,6 +390,7 @@
     "ConfirmPassword": "Confirm Password",
     "ConfirmPasswordARIA": "Confirm password",
     "SubmitSignup": "Sign Up"
+    
   },
   "SignupView": {
     "Title": "p5.js Web Editor | Signup",
