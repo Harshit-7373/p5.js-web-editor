@@ -92,6 +92,7 @@ export default function SideBar() {
               <li>
                 <button
                   aria-label={t('Sidebar.AddFolderARIA')}
+                  onMouseDown={(e) => e.preventDefault()}
                   onClick={() => {
                     dispatch(newFolder(rootFile.id));
                     setTimeout(() => dispatch(closeProjectOptions()), 0);
@@ -104,6 +105,7 @@ export default function SideBar() {
               <li>
                 <button
                   aria-label={t('Sidebar.AddFileARIA')}
+                  onMouseDown={(e) => e.preventDefault()}
                   onClick={() => {
                     dispatch(newFile(rootFile.id));
                     setTimeout(() => dispatch(closeProjectOptions()), 0);
@@ -117,6 +119,7 @@ export default function SideBar() {
                 <li>
                   <button
                     aria-label={t('Sidebar.UploadFileARIA')}
+                    onMouseDown={(e) => e.preventDefault()}
                     onClick={() => {
                       dispatch(openUploadFileModal(rootFile.id));
                       setTimeout(() => dispatch(closeProjectOptions()), 0);

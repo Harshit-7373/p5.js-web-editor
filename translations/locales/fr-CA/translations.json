@@ -68,7 +68,11 @@
       "UsernameOrEmailARIA": "Courriel ou nom d'utilisateur",
       "Password": "Mot de passe",
       "PasswordARIA": "Mot de passe",
-      "Submit": "Se connecter"
+      "Submit": "Se connecter",
+      "Errors": {
+      "invalidCredentials": "E-mail ou mot de passe invalide.",
+      "networkError": "Erreur réseau. Veuillez réessayer plus tard."
+    }
     },
     "LoginView": {
       "Title": "Editeur web p5.js | Se connecter",
